@@ -1,0 +1,8 @@
+enum MapEnum
+{
+    Login = 0;
+    Dating = 1001;
+    Zhandou = 1002;
+}
+
+

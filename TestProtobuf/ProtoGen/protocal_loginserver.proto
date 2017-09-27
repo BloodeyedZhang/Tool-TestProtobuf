@@ -1,0 +1,36 @@
+message cs_empty
+{
+    optional int32 id=1;
+}
+
+message CS_PACKET
+{
+    required int32 module = 10;
+    required int32 cmd = 11;
+    required bytes body = 12;
+
+}
+
+message CS_CombineMessage
+{
+    repeated CS_PACKET list = 1;
+}
+
+
+message CS_LOGINSERVER
+{
+	required int64 accountId = 1;  //’À∫≈
+	required string password = 2; //√‹¬Î
+}
+
+message CS_LOGINRESP
+{
+    required int32 code = 1;  //’À∫≈
+    required string tips = 2; //√‹¬Î
+}
+
+message CS_SCENE
+{
+    required int32 mapId = 1;
+    optional int32 code=2;
+}

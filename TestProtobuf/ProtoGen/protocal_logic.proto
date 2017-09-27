@@ -1,0 +1,65 @@
+message CS_Kapai
+{
+    optional int64 id = 1;
+    required int32 kapai_id = 2;
+    optional int64 player_id = 3;
+    optional int32 dalei = 4;
+    optional int32 bingzhong = 5;
+    optional int32 pinzhi = 6;
+    optional float jiachengbi = 7;
+    optional int32 s_dengji = 8;
+    optional int32 jingyan = 9;
+    optional int32 xingji = 10;
+    optional int32 shengming = 11;
+    optional int32 gongji = 12;
+    optional int32 zhiliao = 13;
+    optional int32 jingyan_shangxian = 14;
+    optional float speed = 15;
+    optional float jingzun = 16;
+    optional float fanwei = 17;
+    optional int32 jiachengzhonglei = 18;
+}
+
+message CS_KapaiList
+{
+    repeated CS_Kapai list = 1;
+}
+
+message CS_Kapai_New
+{
+    optional int32 id = 1;
+    optional int32 dalei = 2;
+    optional int32 bingzhong = 3;
+}
+
+message SoilderTeam
+{
+optional int32 team_id=1;
+optional string soilderIds=2;
+optional int64 player_id=3;
+optional int32 shengmingzhi=4;
+optional int32 gongjizhi=5;
+optional string player_name=6;
+}
+
+message ResPlayerTeamMessage
+{
+repeated SoilderTeam teamList=1;
+}
+
+message ResRankTeamMessage
+{
+repeated SoilderTeam teamList=14;
+repeated CS_Kapai kapais=15;
+repeated CS_Kapai kapais_enemy=16;
+}
+
+message ReqRankBattleEndMessage {
+optional int32 code=1;
+}
+
+message ResRankBattleEndMessage {
+optional int32 code=1;
+optional int32 money1=2;
+optional int32 bonus_points=3;
+}

@@ -1,0 +1,174 @@
+/**
+* @file:   tnt_deploy_crazy_info.proto
+* @author: jameyli <jameyli AT tencent DOT com>
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+
+package tnt_deploy;
+
+message CRAZY_INFO{
+    /** 唯一编号 */
+    required int32 id = 1 [default = 0];
+    /** 等级 */
+    optional int32 dengji = 2 [default = 0];
+    /** 兵种 */
+    optional bytes bingzhong = 3 [default = ""];
+    /** 等级生命 */
+    optional int32 shengming_dengji = 4 [default = 0];
+    /** 品质生命 */
+    optional float shengming_pinzhi = 5 [default = 0];
+    /** 等级攻击 */
+    optional int32 gongjili_dengji = 6 [default = 0];
+    /** 品质攻击 */
+    optional float gongjili_pinzhi = 7 [default = 0];
+    /** 动画速率 */
+    optional float speed = 8 [default = 0];
+    /** 等级治疗 */
+    optional int32 zhiliao_dengji = 9 [default = 0];
+    /** 品质治疗 */
+    optional float zhiliao_pinzhi = 10 [default = 0];
+    /** 射击精准 */
+    optional float jingzun = 11 [default = 0];
+    /** 伤害范围 */
+    optional float fanwei = 12 [default = 0];
+    /** 基础生命 */
+    optional int32 shengming_base = 13 [default = 0];
+    /** 基础攻击 */
+    optional int32 gongji_base = 14 [default = 0];
+    /** 基础治疗 */
+    optional int32 zhiliao_base = 15 [default = 0];
+    /** 大类 */
+    optional int32 dalei = 16 [default = 0];
+    /** 星级 */
+    optional int32 xingji = 17 [default = 0];
+    /** 经验上限 */
+    optional int32 jingyan_shangxian = 18 [default = 0];
+    /** 品质 */
+    optional int32 pinzhi = 19 [default = 0];
+    /** 品质种类 */
+    optional int32 pinzhi_zhonglei = 20 [default = 0];
+    /** 最低加成比 */
+    optional float jiacheng_zuidi = 21 [default = 0];
+    /** 最高加成比 */
+    optional float jiacheng_zuigao = 22 [default = 0];
+    /** 加成比 */
+    optional float jiachengbi = 23 [default = 0];
+    /** 等级 */
+    optional int32 s_dengji = 24 [default = 0];
+    /** 经验 */
+    optional int32 jingyan = 25 [default = 0];
+    /** 培养基准经验 */
+    optional int32 jingyan_xiaohao = 26 [default = 0];
+    /** 培养消耗金钱 */
+    optional int32 jinbi_xiaohao = 27 [default = 0];
+    /** 出售获得金钱 */
+    optional int32 jinbi_chushou = 28 [default = 0];
+    /** 预览图 */
+    optional string yulantu = 29 [default = ""];
+    /** 配置上限 */
+    optional int32 shangxian = 30 [default = 0];
+    /** 伤害范围 */
+    optional float a_fanweishanghai = 31 [default = 0];
+    /** 攻击间隔浮动值 */
+    optional float a_gongjifudong = 32 [default = 0];
+    /** 攻击间隔 */
+    optional float a_gongjijiange = 33 [default = 0];
+    /** 攻击间隔原始参数 */
+    optional float a_gongjijiange_huifuzhi = 34 [default = 0];
+    /** 生命值 */
+    optional float u_shengmingzhi = 35 [default = 0];
+    /** 最大生命值 */
+    optional float u_shengmingzhi_max = 36 [default = 0];
+    /** 攻击力 */
+    optional float a_gongjili = 37 [default = 0];
+    /** 攻击力原始参数 */
+    optional float a_gongjili_huifuzhi = 38 [default = 0];
+    /** 攻击前摇时间 */
+    optional float a_gongjiqianyao = 39 [default = 0];
+    /** 攻击前摇原始参数 */
+    optional float a_gongjiqianyao_huifuzhi = 40 [default = 0];
+    /** 贯穿伤害单位上限个数 */
+    optional int32 a_guanchuangesu = 41 [default = 0];
+    /** 减速效果比率 */
+    optional float a_jiansu = 42 [default = 0];
+    /** 减速效果持续时间 */
+    optional float a_jiansu_shijian = 43 [default = 0];
+    /** 炮击类型精准度 */
+    optional float a_jingzhundu = 44 [default = 0];
+    /** 攻击击退距离 */
+    optional float a_jitui = 45 [default = 0];
+    /** 击退质量比重 */
+    optional int32 a_jitui_zhiliang = 46 [default = 0];
+    /** 武器类型 */
+    optional int32 a_leixing = 47 [default = 0];
+    /** 射程 */
+    optional float a_shecheng = 48 [default = 0];
+    /** 受击判定区域模型(暂无效) */
+    optional string a_shoujipandingmoxing = 49 [default = ""];
+    /** 攻击眩晕持续时间(暂无效) */
+    optional float a_xuanyun = 50 [default = 0];
+    /** 重力抛射力度(暂无效) */
+    optional float a_zhonglipaoshe = 51 [default = 0];
+    /** 子弹弧度比率 */
+    optional float a_zidanhudubilv = 52 [default = 0];
+    /** 子弹模型 */
+    optional string a_zidanmoxing = 53 [default = ""];
+    /** 子弹速度 */
+    optional float a_zidansudu = 54 [default = 0];
+    /** 子弹是制导的吗?(暂无效) */
+    optional bool a_zidao = 55;
+    /** 治疗值 */
+    optional float a_zilaoshuzi = 56 [default = 0];
+    /** 是否属于牧师 */
+    optional bool a_ziliao = 57;
+    /** 技能 */
+    optional string c_jineng = 58 [default = ""];
+    /** 子弹爆炸特效 */
+    optional string f_zidan_baozha = 59 [default = ""];
+    /** 子弹发射特效 */
+    optional string f_zidan_fashe = 60 [default = ""];
+    /** 名字美国英文 */
+    optional string n_mingzi_usen = 61 [default = ""];
+    /** 名字中文 */
+    optional string n_mingzi_zhcn = 62 [default = ""];
+    /** 单位音频数据 */
+    optional string s_shengyin = 63 [default = ""];
+    /** 子弹音效数据 */
+    optional string s_zidan_yinxiao = 64 [default = ""];
+    /** 保护套大小 */
+    optional float u_baohutao_daxiao = 65 [default = 0];
+    /** 保护套生命 */
+    optional float u_baohutao_shengming = 66 [default = 0];
+    /** 等级 */
+    optional int32 u_dengji = 67 [default = 0];
+    /** 动画速率 */
+    optional float u_donghuasulv = 68 [default = 0];
+    /** 动画速率原始参数 */
+    optional float u_donghuasulv_huifuzhi = 69 [default = 0];
+    /** 击杀奖励 */
+    optional float u_jiangli = 70 [default = 0];
+    /** 单位碰撞体参数 */
+    optional float u_jiaosetiji_h = 71 [default = 0];
+    /** 单位碰撞体参数 */
+    optional float u_jiaosetiji_r = 72 [default = 0];
+    /** 单位碰撞体参数 */
+    optional float u_jiaosetiji_y = 73 [default = 0];
+    /** 单位是否激活 */
+    optional bool u_jihuo = 74;
+    /** 单位模型 */
+    optional string u_moxing = 75 [default = ""];
+    /** 所属玩家 */
+    optional int64 u_wanjia = 76 [default = 0];
+    /** 移动速度 */
+    optional float u_yidongsudu = 77 [default = 0];
+    /** 移动速度原始参数 */
+    optional float u_yidongsudu_huifuzhi = 78 [default = 0];
+    /** 配置ID */
+    optional int32 configId = 79 [default = 0];
+    /** 使用 跳转id */
+    optional int32 subSystemId = 80 [default = 0];
+}
+
+message CRAZY_INFO_ARRAY {
+    repeated CRAZY_INFO items = 1;
+}
